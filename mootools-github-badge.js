@@ -35,7 +35,6 @@ SubtleTemplate.GitHubBadge = new Class({
 	},
 	
 	setData: function(data){
-		console.log('setData')
 		this.toElement().empty().adopt(new this.Template(this.options.filterData(data)));
 		return this.fireEvent('change');
 	}
@@ -52,7 +51,6 @@ SubtleTemplate.GitHubBadge.Fade = new Class({
 	},
 	
 	setData: function(data){
-		console.log('Fade:setData')
 		var el = this.toElement().empty();
 		var rows = new this.Template(this.options.filterData(data));
 		rows = rows.reverse();
