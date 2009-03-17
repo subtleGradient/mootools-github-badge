@@ -1,0 +1,40 @@
+MooTools GitHub Badge
+=====================
+
+Super simple MooTools class for hooking up the JSON from GitHub with a SubtleTemplate. Create the template using custom html and it'll get populated automagically.
+
+## Usage:
+
+### In your HTML:
+
+	<div id="github-badge"></div>
+	…
+	<pre id="github-badge-template" title="{description}">
+		{fork} {forks} {homepage} {name} {owner} {private} {url} {watchers}
+	</pre>
+
+* `#github-badge` is the parent element what will be emptied and refilled.
+* `#github-badge-template` is the template that will be String.substitute'd with the results of your JSON
+* You can use any tags you want, with any attributes you want. IDs are removed.
+* The template element can contain whatever you want.
+* The 
+
+
+### In your Javascript:
+
+	new SubtleTemplate.GitHubBadge(options);
+
+#### Options:
+All options are… *optional*
+
+* **username** *String*  
+	default: "subtleGradient"
+* **element** *Element | ID String*  
+	default: "github-badge"
+* **templateElement** *Element | ID String*  
+	default: "github-badge-template"
+* **filterData** *Function*  
+	default: `function(data){ return data.user.repositories; }`  
+	The filterData function will be passed the JSON data as received from GitHub.com  
+	Whatever filterData returns will be used to populate your SubtleTemplate instance.  
+	Returning an array of objects (which is the default) will create multiple template instances.
