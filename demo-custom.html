@@ -11,35 +11,6 @@
 <body>
 <div class="container">
 
-	<table>
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-				<th>Fork</th>
-				<th>Forks</th>
-				<th>Homepage</th>
-				<th>Owner</th>
-				<th>Private</th>
-				<th>Url</th>
-				<th>Watchers</th>
-			</tr>
-		</thead>
-		<tbody id="github-badge0">
-			<tr id="github-badge-template0">
-				<th>{name}</th>
-				<td>{description}</td>
-				<td>{fork}</td>
-				<td>{forks}</td>
-				<td>{homepage}</td>
-				<td>{owner}</td>
-				<td>{private}</td>
-				<td>{url}</td>
-				<td>{watchers}</td>
-			</tr>
-		</tbody>
-	</table>
-
 	<ol id="github-badge1">
 		<li id="github-badge-template1">
 			<strong><a href="{url}">{name}</a></strong>
@@ -62,12 +33,6 @@
 
 <script src="mootools-github-badge.js" type="text/javascript"> </script>
 <script type="text/javascript" charset="utf-8">
-	
-	new SubtleTemplate.GitHubBadge({
-		username:'kamicane',
-		element:'github-badge0',
-		templateElement:'github-badge-template0'
-	});
 	
 	new SubtleTemplate.GitHubBadge.Fade({
 		username:'kassens',
