@@ -78,4 +78,4 @@ Thanks Dr.Nic!
 --------------
 This plugin is obviously a complete ripoff of [Dr.Nic's GitHub-Badge](http://drnicwilliams.com/2008/05/03/github-badge-for-your-blog/ "Dr Nic&#8217;s GitHub Badge for your Blog with 100% guarantee of more coolness"). But I just happen to like MooTools better than jQuery. Also, I thought I'd add about 100 additional features in about half the code ;)
 
-Oh yeah, Dr.Nic, If you mind me hard linking to your CSS, I'll happily "fix" that. I just got lazy and wanted to move on with my life.
+Oh yeah, Dr.Nic gave me permission to hard-link to his css. <q>No problems.</q> -- <cite>Dr. Nic</cite>
